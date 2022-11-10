@@ -10,7 +10,8 @@ int main() {
     cin >> inputString;
 
     StringReverser* reverser = new StringReverser(inputString);
-    cout << "The string you entered is : " << reverser->getOriginalString() << endl;
+    cout << endl << "The string you entered: " << reverser->getOriginalString() << endl;
+    cout << "The reversed string: " << reverser->reverseFromTheEnd() << endl;
 
     cout << endl << "Goodbye." << endl;
 

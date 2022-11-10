@@ -7,6 +7,7 @@ using namespace std;
 class StringReverser{
 public:
     StringReverser(string inputString) : originalString(inputString) {}
+    string reverseFromTheEnd();
     string getOriginalString();
 
 private:
