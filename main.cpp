@@ -10,12 +10,12 @@ int main() {
     cin >> inputString;
 
     StringReverser* reverser = new StringReverser(inputString);
-    cout << endl << "The string you entered: " << reverser->getOriginalString() << endl;
-    cout << "The reversed string: " << reverser->reverseFromTheEnd() << endl;
+    cout << endl << "The string you entered: " << reverser->getOriginalString() << endl; // Display the string that user entered
+    cout << "The reversed string: " << reverser->reverseFromTheEnd() << endl; // Display the reversed string
 
     cout << endl << "Goodbye." << endl;
 
-    delete reverser; // Delete dynamically allocated memory
+    delete reverser; // Delete dynamically allocated memory to prevent memory leak
 
     return 0;
 }
