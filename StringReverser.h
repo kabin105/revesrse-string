@@ -8,6 +8,8 @@ class StringReverser{
 public:
     StringReverser(string inputString) : originalString(inputString) {}
     string reverseFromTheEnd();
+
+    // Getter
     string getOriginalString();
 
 private:
