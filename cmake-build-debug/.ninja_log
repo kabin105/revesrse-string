@@ -1,0 +1,10 @@
+# ninja log v5
+3	446	6897617102860827	CMakeFiles/revesrse_string.dir/main.cpp.obj	28f35251edd97744
+352	484	6896892219996339	revesrse_string.exe	a6c085c848303952
+2	330	6897617324978527	build.ninja	9a6849258ac8424a
+3	292	6897617328671055	CMakeFiles/revesrse_string.dir/StringReverser.cpp.obj	c97f0b39881e3481
+293	388	6897617329579633	revesrse_string.exe	9b074ad00aae1a6
+3	300	6897617741900987	CMakeFiles/revesrse_string.dir/main.cpp.obj	28f35251edd97744
+301	402	6897617742876320	revesrse_string.exe	9b074ad00aae1a6
+3	380	6897617894550577	CMakeFiles/revesrse_string.dir/main.cpp.obj	28f35251edd97744
+381	489	6897617895518961	revesrse_string.exe	9b074ad00aae1a6
