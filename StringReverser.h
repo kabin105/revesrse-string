@@ -9,10 +9,12 @@ using namespace std;
 class StringReverser{
 public:
     StringReverser(string inputString) : originalString(inputString) {}
-    string reverseFromTheEnd();
-    void reverseBySwap(string& str);
-    void reverseUsingList();
+    string reverseFromTheEnd(); // 1st expression
+    void reverseBySwap(string& str); // 2nd expression
+    void reverseUsingList(); // 3rd expression
     void printString(); // Prints the list of characters as if it's a string
+    void reverseRecursive(string& str, int startIdx, int endIdx); // 4th expression
+    string reverseString(); // 5th expression
 
     // Getter
     string getOriginalString();
