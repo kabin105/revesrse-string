@@ -5,6 +5,7 @@ string StringReverser::getOriginalString() {
 }
 
 string StringReverser::reverseFromTheEnd() {
+    // First expression
     string reversedString = "";
     for (int i = 0; i < originalString.size(); ++i) {
         // Reverse the string by extracting each character of the string from the end to the beginning
@@ -12,6 +13,14 @@ string StringReverser::reverseFromTheEnd() {
     }
 
     return reversedString;
+}
+
+void StringReverser::reverseBySwap(std::string &str) {
+    // Second expression
+    // Swap the first and the last character of the string, the second and second to the last character, and so on
+    for (int i = 0; i < str.size()/2; ++i) {
+        swap(str[i], str[str.size()-1-i]);
+    }
 }
 
 void StringReverser::reverseUsingList() {

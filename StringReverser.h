@@ -10,6 +10,7 @@ class StringReverser{
 public:
     StringReverser(string inputString) : originalString(inputString) {}
     string reverseFromTheEnd();
+    void reverseBySwap(string& str);
     void reverseUsingList();
     void printString(); // Prints the list of characters as if it's a string
 
