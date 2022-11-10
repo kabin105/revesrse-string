@@ -1,9 +1,5 @@
 #include "StringReverser.h"
 
-string StringReverser::getOriginalString() {
-    return originalString;
-}
-
 string StringReverser::reverseFromTheEnd() {
     string reversedString = "";
     for (int i = 0; i < originalString.size(); ++i) {
@@ -22,6 +18,7 @@ void StringReverser::reverseBySwap(string &str) {
 }
 
 void StringReverser::reverseUsingList() {
+    listOfChars.clear(); // Ensure the list does not contain any character from previously
     // Prepending each character of a string to a list starting from the beginning will reverse the string
     for (int i = 0; i < originalString.size(); ++i) {
         listOfChars.push_front(originalString[i]);

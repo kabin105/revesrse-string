@@ -3,13 +3,15 @@
 
 using namespace std;
 
-int main() {
-    // Prompt user to enter a string to reverse
-    cout << "Enter a string that you want to reverse: " << endl;
-    string inputStr;
-    cin >> inputStr;
+string promptUser() {
+   cout << "Enter a string that you want to reverse. Type \"quit:\" to exit the program:  " << endl;
+   string inputStr;
+   cin >> inputStr;
 
-    StringReverser* reverser = new StringReverser(inputStr);
+   return inputStr;
+}
+
+void displayReverse(StringReverser* reverser, string inputStr) {
     cout << endl << "The string you entered: " << reverser->getOriginalString() << endl; // Display the string that user entered
     cout << "The reversed string using the 1st expression: " << reverser->reverseFromTheEnd() << endl; // Display the reversed string using the first expression
 
@@ -25,7 +27,18 @@ int main() {
     reverser->reverseRecursive(ogStr, 0, ogStr.size()-1);
     cout << "The reversed string using the 4th expression: " << ogStr << endl;
 
-    cout << "The reversed string using the 5th expression: " << reverser->reverseString() << endl;
+    cout << "The reversed string using the 5th expression: " << reverser->reverseString() << endl << endl;
+}
+
+int main() {
+    string inputStr = promptUser(); // Prompt the user to enter a string to reverse or exit
+
+    StringReverser* reverser = new StringReverser(inputStr); // Instantiate StringReverser object
+    while (inputStr != "quit") {
+        displayReverse(reverser, inputStr); // Display the reversed string for each expression
+        inputStr = promptUser(); // Re-prompt the user for another string to reverse or for termination
+        reverser->setString(inputStr); // Update the string with the one that user newly enters
+    }
 
     cout << endl << "Goodbye." << endl;
 

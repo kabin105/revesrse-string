@@ -16,8 +16,9 @@ public:
     void reverseRecursive(string& str, int startIdx, int endIdx); // 4th expression
     string reverseString(); // 5th expression
 
-    // Getter
-    string getOriginalString();
+    // Getter and setter
+    string getOriginalString() { return originalString; }
+    void setString(string str) { originalString = str; }
 
 private:
     string originalString;
